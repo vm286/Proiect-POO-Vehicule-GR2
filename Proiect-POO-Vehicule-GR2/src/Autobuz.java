@@ -1,13 +1,16 @@
-public class Autobuz {
-       String marca;
+public class Autobuz extends Vehicul {
+
        String tipCombustibil;
        int capacitatePasageri;
-       int anFabricatie;
-       public Autobuz(String marca, int capacitatePasageri, int anFabricatie, String tipCombustibil){
-           this.marca=marca;
+
+       public Autobuz(int id, String culoare, String marca, int capacitatePasageri, int anFabricatie, String tipCombustibil){
+           super(id, culoare, marca, anFabricatie);
            this.capacitatePasageri=capacitatePasageri;
-           this.anFabricatie=anFabricatie;
            this.tipCombustibil=tipCombustibil;
+       }
+
+       public Autobuz (){
+
        }
 
     @Override
