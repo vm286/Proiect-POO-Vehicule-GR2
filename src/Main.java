@@ -6,6 +6,5 @@ Avion av = new Avion("Boeing", "777");
 Submarin sub=new Submarin("Typhoon", 20);
 System.out.println(av);
 System.out.println(sub);
-System.out.println("ba radu baaaa, vlad e caiineee");
     }
 }
