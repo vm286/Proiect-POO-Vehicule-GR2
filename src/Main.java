@@ -3,6 +3,8 @@
 public class Main {
     public static void main(String[] args) {
 Avion av = new Avion("Boeing", "777");
+Submarin sub=new Submarin("Typhoon", 20);
 System.out.println(av);
+System.out.println(sub);
     }
 }
