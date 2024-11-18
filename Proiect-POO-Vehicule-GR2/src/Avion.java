@@ -6,7 +6,6 @@ public Avion(){
 }
 public Avion(String Marca, String Model, int id, int anFabricatie, String culoare){
     super(id, Marca, anFabricatie, culoare );
-    this.Marca = Marca;
     this.Model = Model;
 }
 public Avion(Avion a){
