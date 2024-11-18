@@ -1,12 +1,21 @@
 public class Submarin {
-private String
+private String model;
+private int tonaj;
+public Submarin(String model, int tonaj) {
+    this.model = model;
+    this.tonaj = tonaj;
+}
+public Submarin() {
+    this.model = "Not Defined";
+}
+
     @Override
     public String toString() {
-        if(Marca=="Not Defined"){
+        if(model=="Not Defined"){
             return "Nu a fost definit.";
         }
         else{
-            return "Avion de marca "+Marca+", de model "+Model+".";
+            return "Submarin model "+model+" de tonaj:"+tonaj+" de tone."    ;
         }
     }
 }
