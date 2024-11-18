@@ -2,8 +2,8 @@
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
-Avion av = new Avion("Boeing", "777");
-Submarin sub=new Submarin("Typhoon", 20);
+Avion av = new Avion();
+Submarin sub=new Submarin();
 System.out.println(av);
 System.out.println(sub);
     }

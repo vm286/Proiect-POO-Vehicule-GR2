@@ -1,22 +1,26 @@
-public class Avion {
-private String Marca, Model;
+public class Avion extends Vehicul {
+private String  Model;
 public Avion(){
-    Marca = "Not Defined";
+    super();
     Model = "";
 }
-public Avion(String Marca, String Model){
-    this.Marca = Marca;
+public Avion(String Marca, String Model, int id, int anFabricatie, String culoare){
+    super(id, Marca, anFabricatie, culoare );
     this.Model = Model;
+}
+public Avion(Avion a){
+    super(a);
+    this.Model = a.Model;
 }
 
 
     @Override
     public String toString() {
-    if(Marca=="Not Defined"){
+    if(this.getMarca()=="Necunoscut"){
         return "Nu a fost definit.";
     }
     else{
-     return "Avion de marca "+Marca+", de model "+Model+".";
+     return "Avion de marca "+this.getMarca()+", de model "+Model+".";
     }
     }
 }
