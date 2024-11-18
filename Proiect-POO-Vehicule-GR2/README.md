@@ -1,2 +1,6 @@
-# Proiect-POO-Vehicule-GR2
-ba radu ba caine ce esti baaaa
+# Proiect-POO-Vehicule-GR2 
+Proiect realizat de:
+Mirea Cristian Andrei
+Munteanu Vlad-Ioan
+Nastasache Claudia
+Radu Ion
