@@ -11,8 +11,5 @@ public class Motocicleta {
        this.capacitateCilindrica=capacitateCilindrica;
    }
 
-    @Override
-    public String toString() {
 
-    }
 }
