@@ -35,5 +35,17 @@ public class Vehicul {
     }
 
     // Getteri și setteri (opțional)
+    int getId(){
+        return id;
+    }
+    String getMarca(){
+        return marca;
+    }
+    int getAnFabricatie(){
+        return anFabricatie;
+    }
+    String getCuloare(){
+        return culoare;
+    }
 }
 
