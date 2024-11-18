@@ -5,6 +5,6 @@ public class Main {
 Avion av = new Avion("Boeing", "777");
 Submarin sub=new Submarin("Typhoon", 20);
 System.out.println(av);
-System.out.println("ba radu baaaa");
+System.out.println(sub);
     }
 }
