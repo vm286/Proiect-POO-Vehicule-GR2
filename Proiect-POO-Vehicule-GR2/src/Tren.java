@@ -9,7 +9,7 @@ public class Tren extends Vehicul {
         this.tipTren = "Necunoscut";
     }
 
-    // Constructor cu toate argumentele
+    // Constructor cu argumentele
     public Tren(int id, String marca, int anFabricatie, String culoare, int numarVagoane, String tipTren) {
         super(id, marca, anFabricatie, culoare);
         this.numarVagoane = numarVagoane;
