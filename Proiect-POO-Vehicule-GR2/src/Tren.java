@@ -26,6 +26,6 @@ public class Tren extends Vehicul {
     // Metoda toString
     @Override
     public String toString() {
-        return super.toString() + ", Tren [Număr Vagoane: " + numarVagoane + ", Tip: " + tipTren + "]";
+        return super.toString() + " este Tren [Număr Vagoane: " + numarVagoane + ", Tip: " + tipTren + "]";
     }
 }

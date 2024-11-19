@@ -26,7 +26,7 @@ public class Vapor extends Vehicul {
     // Metoda toString
     @Override
     public String toString() {
-        return super.toString() + ", Vapor [Tonaj: " + tonaj + " tone, Tip: " + tipVapor + "]";
+        return super.toString() + " este Vapor [Tonaj: " + tonaj + " tone, Tip: " + tipVapor + "]";
     }
 }
 
