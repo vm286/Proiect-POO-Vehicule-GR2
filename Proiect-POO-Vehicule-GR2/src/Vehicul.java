@@ -35,16 +35,14 @@ public abstract class Vehicul {
     }
 
     // Getteri și setteri (opțional)
-    int getId(){
+    public int getId(){
         return id;
     }
-    String getMarca(){
-        return marca;
-    }
-    int getAnFabricatie(){
+    public String getMarca(){ return marca;}
+    public int getAnFabricatie(){
         return anFabricatie;
     }
-    String getCuloare(){
+    public String getCuloare(){
         return culoare;
     }
 }

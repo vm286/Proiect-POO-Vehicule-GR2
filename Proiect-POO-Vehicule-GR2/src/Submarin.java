@@ -15,7 +15,9 @@ public Submarin() {
     super();
     this.model = "Not Defined";
 }
-
+public String getMarca(){
+    return "Submarinul nu are marca comerciala.";
+}
     @Override
     public String toString() {
         if(model=="Not Defined"){
