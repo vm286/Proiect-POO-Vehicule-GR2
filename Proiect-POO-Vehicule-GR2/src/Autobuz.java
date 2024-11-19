@@ -29,4 +29,5 @@ public class Autobuz extends Vehicul {
         return String.format("Autobuz (ID: %d): %s [%d pasageri, linia %d]",
                 super.getId(), super.getMarca(), capacitatePasageri, linie);
     }
+
 }

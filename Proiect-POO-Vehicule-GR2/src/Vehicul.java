@@ -1,4 +1,4 @@
-public class Vehicul {
+public abstract class Vehicul {
     private int id;
     private String marca;
     private int anFabricatie;
