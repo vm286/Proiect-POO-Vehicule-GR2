@@ -38,7 +38,7 @@ public abstract class Vehicul {
     public int getId(){
         return id;
     }
-    public String getMarca(){ return marca;}
+    public String getMarca(){ return "Marca este " + marca;}
     public int getAnFabricatie(){
         return anFabricatie;
     }
