@@ -7,7 +7,7 @@ public class Main extends Vehicul{
         System.out.println(av);
         System.out.println(sub);
 
-    Motocicleta motocicleta1 = new Motocicleta(0,"bmw",2004,"ROSU",1400,true );
-    System.out.println(motocicleta1);
+    Masina masina1 = new Masina(22,"Dacia",2010,"ROSU",1459, "sedan" );
+    System.out.println(masina1);
     }
 }

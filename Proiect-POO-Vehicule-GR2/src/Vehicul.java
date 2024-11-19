@@ -31,7 +31,7 @@ public class Vehicul {
     // Metoda toString
     @Override
     public String toString() {
-        return "Vehicul [ID: " + id + ", Marca: " + marca + ", An: " + anFabricatie + ", Culoare: " + culoare + "]";
+        return "Vehicul ID: " + id + ", Marca: " + marca + ", An: " + anFabricatie + ", Culoare: " + culoare + "]";
     }
 
     // Getteri și setteri (opțional)
