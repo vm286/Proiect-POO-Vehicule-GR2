@@ -1,0 +1,67 @@
+
+*** These modified files were found in JOE when it aborted on Tue Nov 19 00:58:43 2024
+*** JOE was aborted because the terminal closed
+
+*** File '(Unnamed)'
+y
+
+*** File '* Build Log *'
+
+JOE: cd /home/vm286/Desktop/Proiect POO
+
+/bin/sh: 3: y: not found
+
+JOE: [31mFAIL[0m (exit status = 127)
+
+
+q
+*** File '(Unnamed)'
+/home/vm286/Desktop/Proiect POO/.git/MERGE_MSG
+* Build Log *
+
+*** File '/home/vm286/Desktop/Proiect POO/.git/MERGE_MSG'
+
+
+Merge branch 'main' of https://github.com/vm286/Proiect-POO-Vehicule-GR2 into main
+# Please enter a commit message to explain why this merge is necessary,
+# especially if it merges an updated upstream into a topic branch.
+#
+# Lines starting with '#' will be ignored, and an empty message aborts
+# the commit.
+Ca asa tre
+
+
+
+
+exit
+
+*** File '* Startup Log *'
+Processing '/etc/joe/editorrc'...
+Processing '/etc/joe/ftyperc'...
+Finished processing /etc/joe/ftyperc
+Finished processing /etc/joe/editorrc
+
+*** These modified files were found in JOE when it aborted on Tue Nov 19 01:07:50 2024
+*** JOE was aborted because the terminal closed
+
+*** File '(Unnamed)'
+/home/vm286/Desktop/Proiect POO/.git/MERGE_MSG
+
+*** File '/home/vm286/Desktop/Proiect POO/.git/MERGE_MSG'
+Merge branch 'main' of https://github.com/vm286/Proiect-POO-Vehicule-GR2 into main
+# Please enter a commit message to explain why this merge is necessary,
+# especially if it merges an updated upstream into a topic branch.
+#
+# Lines starting with '#' will be ignored, and an empty message aborts
+# the commit.
+ddas
+
+asdads
+done
+
+
+*** File '* Startup Log *'
+Processing '/etc/joe/editorrc'...
+Processing '/etc/joe/ftyperc'...
+Finished processing /etc/joe/ftyperc
+Finished processing /etc/joe/editorrc

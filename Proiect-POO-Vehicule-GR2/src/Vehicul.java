@@ -47,5 +47,6 @@ public class Vehicul {
     String getCuloare(){
         return culoare;
     }
+    //sdhfkjsdfsd
 }
 
