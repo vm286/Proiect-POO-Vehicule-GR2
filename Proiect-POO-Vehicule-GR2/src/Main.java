@@ -7,7 +7,7 @@ public class Main extends Vehicul{
         System.out.println(av);
         System.out.println(sub);
 
-    Masina masina1 = new Masina(22,"Dacia",2010,"ROSU",1459, "sedan" );
-    System.out.println(masina1);
+        Tractor tractor1= new Tractor(22,"Same",2010,"ROSU",110, "functional" );
+    System.out.println(tractor1);
     }
 }
