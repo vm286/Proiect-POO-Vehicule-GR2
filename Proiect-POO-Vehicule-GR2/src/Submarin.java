@@ -13,6 +13,7 @@ public Submarin(Submarin s) {
 }
 public Submarin() {
     super();
+    this.tonaj = 0;
     this.model = "Not Defined";
 }
 public String getMarca(){
