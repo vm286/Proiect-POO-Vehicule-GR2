@@ -35,6 +35,22 @@ public class Autobuz extends Vehicul {
         this.esteElectric = other.esteElectric;
     }
 
+    public void setAerConditionat(boolean aerConditionat) {
+        this.aerConditionat = aerConditionat;
+    }
+
+    public void setEsteElectric(boolean esteElectric) {
+        this.esteElectric = esteElectric;
+    }
+
+    public boolean isAerConditionat() {
+        return aerConditionat;
+    }
+
+    public boolean isEsteElectric() {
+        return esteElectric;
+    }
+
     // Metoda toString
     @Override
     public String toString() {
