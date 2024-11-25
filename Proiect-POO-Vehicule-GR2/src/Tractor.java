@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 public class Tractor extends Vehicul{
     private int cai_putere;
     private String starea_curenta;
