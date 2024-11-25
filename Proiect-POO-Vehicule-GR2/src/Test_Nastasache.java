@@ -9,15 +9,7 @@ public class Test_Nastasache {
             System.out.println(m);
         }
 
-        // Metoda de parcurgere a listei folosind un for clasic
 
-        for (int i = 0; i < listaMotociclete.size(); i++) {
-                Motocicleta motocicleta = (Motocicleta) listaMotociclete.get(i); // Casting la Motocicleta
-
-                // Verificăm dacă motocicleta satisface condițiile
-                if (motocicleta.getCilindree() >= 1500 && motocicleta.isEsteElectric() == true) {
-                    System.out.println(motocicleta.toString());
-                }
         //afisare instante care satisfac doua conditii introduse de utilizator
         System.out.println("lista de motociclete electrice cu atas este: ");
         for (Motocicleta n : Motocicleta.getListaMotociclete()) {
@@ -73,4 +65,4 @@ public class Test_Nastasache {
 
     }
 
-} }
+}
