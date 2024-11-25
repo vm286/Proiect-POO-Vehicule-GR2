@@ -1,4 +1,3 @@
-
 public class Vehicul {
     private int id;
     private String marca;
