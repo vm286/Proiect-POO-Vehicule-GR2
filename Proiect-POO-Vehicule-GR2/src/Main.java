@@ -18,6 +18,6 @@ System.out.println(Combi_Freighter_4500);
 Motocicleta moto = new Motocicleta(1,2,true,"bmw",2010,"rosie",2000,false);
 System.out.println(moto);
 
-        ArrayList<Motocicleta> listaMotociclete = Motocicleta.getListaMotociclete();
+
     }
 }

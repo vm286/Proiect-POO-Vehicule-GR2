@@ -53,6 +53,17 @@ public class Motocicleta extends Vehicul  {
         Motocicleta Ducati = new Motocicleta(8, 4, false, "Ducati", 2000, "ducati", 2000, true);
         Motocicleta Aprilia = new Motocicleta(9, 2, false, "Aprilia", 2000, "aprilia", 2000, true);
         Motocicleta KTM = new Motocicleta(10, 4, false, "KTM", 2000, "ktm", 2000, true);
+
+        motociclete.add(BMW);
+        motociclete.add(HarleyDavidson);
+        motociclete.add(Honda);
+        motociclete.add(Kawasaki);
+        motociclete.add(Yamaha);
+        motociclete.add(Suzuki);
+        motociclete.add(Triumph);
+        motociclete.add(Ducati);
+        motociclete.add(Aprilia);
+        motociclete.add(KTM);
     return motociclete;
     }
     }
