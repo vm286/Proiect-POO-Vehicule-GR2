@@ -1,4 +1,4 @@
-public abstract class Vehicul {
+public class Vehicul {
     private int id;
     private String marca;
     private int anFabricatie;
@@ -45,5 +45,7 @@ public abstract class Vehicul {
     public String getCuloare(){
         return culoare;
     }
+
+    
 }
 

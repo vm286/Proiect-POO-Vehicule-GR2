@@ -14,7 +14,7 @@ Tren IR1802 = new Tren(1802,"CFR",2004,"ALBASTRU",3,"NORMAL");
 System.out.println(IR1802);
 Vapor Combi_Freighter_4500=new Vapor(4500,"DAMEN",2024,"ALB",2950,"MARFAR");
 System.out.println(Combi_Freighter_4500);
-Motocicleta moto = new Motocicleta(1,"bmw",2011,"rosie",120,false);
+Motocicleta moto = new Motocicleta(1,2,true,"bmw",2010,"rosie",2000,false);
 System.out.println(moto);
     }
 }
