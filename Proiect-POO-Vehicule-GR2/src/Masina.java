@@ -1,6 +1,8 @@
 public class Masina extends Vehicul{
     private int capacitate_cilindrica;
     private String tip_caroserie;
+    private float consum_combustibil;
+
 
     //Constructor fara argumente
     public Masina(){
