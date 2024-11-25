@@ -1,6 +1,6 @@
 import java.util.ArrayList;
 
-public class Avion extends Vehicul {
+public class Avion extends Vehicul implements StareVehicul{
 private String  Model,tipMotor;
 private int maxrange,pssnr,cargolim;
 public Avion(){
@@ -72,5 +72,14 @@ avioane.add(Lockheed);
     else{
      return "Avion de marca "+super.getMarca()+", de model "+Model+", care poate transporta "+this.pssnr+" de oameni, "+this.cargolim+" de tone de marfa cu motor tip "+this.tipMotor;
     }
+    }
+
+    @Override
+    public void functional(){
+        System.out.println("Avionul functioneaza");
+    }
+    @Override
+    public void nefunctional(){
+        System.out.println("Avionul nu mai functioneaza");
     }
 }

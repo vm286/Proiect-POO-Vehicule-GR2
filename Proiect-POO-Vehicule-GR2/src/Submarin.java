@@ -1,6 +1,6 @@
 import java.util.ArrayList;
 
-public class Submarin extends Vehicul {
+public class Submarin extends Vehicul implements StareVehicul {
 private String model,tipCombustibil,tipArmament;
 private int tonaj,adancimeMax;
 public Submarin(String model, int tonaj, int id, int anFabricatie, String culoare, int adancimeMax, String tipCombustibil, String tipArmament ) {
@@ -63,5 +63,13 @@ public String getMarca(){
         else{
             return "Submarin model "+model+" de tonaj:"+tonaj+" de tone."    ;
         }
+    }
+    @Override
+    public void functional(){
+    System.out.println("Submarinul functioneaza");
+    }
+    @Override
+    public void nefunctional(){
+    System.out.println("Submarinul nu mai functioneaza");
     }
 }
