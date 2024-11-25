@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+
 public class Tren extends Vehicul {
     private int numarVagoane;
     private String tipTren;

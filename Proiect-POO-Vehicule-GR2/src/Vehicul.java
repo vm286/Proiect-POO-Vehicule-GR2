@@ -1,4 +1,4 @@
-public class Vehicul {
+public class Vehicul implements StareVehicul {
     private int id;
     private String marca;
     private int anFabricatie;
@@ -44,6 +44,16 @@ public class Vehicul {
     }
     public String getCuloare(){
         return culoare;
+    }
+
+    @Override
+    public void functional() {
+        System.out.println("Funcțional.");
+    }
+
+    @Override
+    public void nefunctional() {
+        System.out.println("Nefuncțional.");
     }
 }
 
