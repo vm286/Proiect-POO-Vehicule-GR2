@@ -41,9 +41,26 @@ public class Motocicleta extends Vehicul  {
     @Override
     public String toString() {
         return "Motocicleta " + super.getMarca() + " cu " + cilindree + " cm³" +
-                (areAtas ? " și ataș." : " fără ataș.")+
+                (areAtas ? " și ataș" : " fără ataș")+
                 (esteElectric ? " este electrica." : " nu este electrica.");
     }
+
+    public void setEsteElectric(boolean esteElectric) {
+        this.esteElectric = esteElectric;
+    }
+
+    public void setAreAtas(boolean areAtas) {
+        this.areAtas = areAtas;
+    }
+
+    public boolean isEsteElectric() {
+        return esteElectric;
+    }
+
+    public boolean isAreAtas() {
+        return areAtas;
+    }
+
     //vector 10 elemente tip ArrayList
     public static ArrayList<Motocicleta> getListaMotociclete() {
         ArrayList<Motocicleta> motociclete = new ArrayList<>();
@@ -56,7 +73,7 @@ public class Motocicleta extends Vehicul  {
         Motocicleta Triumph = new Motocicleta(7,"euro5", 4, false, "Triumph", 1999, "triumph", 1500, false);
         Motocicleta Ducati = new Motocicleta(8, "euro3", 4, false, "Ducati", 2000, "ducati", 2000, true);
         Motocicleta Aprilia = new Motocicleta(9,"euro4", 2, false, "Aprilia", 2000, "aprilia", 2000, true);
-        Motocicleta KTM = new Motocicleta(10,"euro4", 4, false, "KTM", 2000, "ktm", 2000, true);
+        Motocicleta KTM = new Motocicleta(10,"euro4", 4, true, "KTM", 2000, "ktm", 2000, true);
 
         motociclete.add(BMW);
         motociclete.add(HarleyDavidson);
