@@ -31,6 +31,7 @@ public Avion(Avion a){
         Avion Airbus = new Avion("Airbus", "A220", 3, 2012, "Alb", 22500, 120, 225, "Turbofan x 4");
         Avion Dassault = new Avion("Dassault", "Mirage", 4, 1978, "Industrial Grey", 3000, 1, 12, "Jet x 1");
         Avion Fairchild = new Avion("Fairchild", "A-10", 5, 1977, "Gri", 3000, 2, 8, "Jet x 2");
+        Avion Northrop = new Avion("Northrop", "B-2", 6, 1987, "Negru", 11000, 6, 20, "Jet x 2")
 
 
 
