@@ -2,13 +2,39 @@ import java.util.ArrayList;
 
 public class Test_Nastasache {
     public static void main(String[] args) {
+// instante si afisari
+        // Creare instanțe pentru clasa Vehicul
+        Vehicul audi = new Vehicul();
+        Vehicul dacia = new Vehicul(1,"dacia",2004,"alb");
+        Vehicul dacia2 = new Vehicul(dacia);
+        System.out.println(audi);
+        System.out.println(dacia);
+        System.out.println(dacia2);
+
+        // Creare instanțe pentru clasa Autobuz
+        Autobuz tesla = new Autobuz();
+        Autobuz Mercedes = new Autobuz(2, true, "Euro6", "mercedes", true, 2021, "Albastru", 40, 101);
+        Autobuz mercedes2 = new Autobuz(Mercedes);
+        System.out.println(tesla);
+        System.out.println(Mercedes);
+        System.out.println(mercedes2);
+
+        // Creare instanțe pentru clasa Motocicleta
+        Motocicleta bmw = new Motocicleta();
+        Motocicleta honda = new Motocicleta(3, "Euro5", 2, false, "Honda", 2019, "Negru", 1000, true);
+        Motocicleta honda2 = new Motocicleta(honda); // Copiere din motocicleta2
+        System.out.println(bmw);
+        System.out.println(honda);
+        System.out.println(honda2);
+
+
+        //vectori
         //metoda for-each si utilizare de getter
         ArrayList<Motocicleta> listaMotociclete = Motocicleta.getListaMotociclete();
         System.out.println("lista de motociclete este: ");
         for (Motocicleta m : Motocicleta.getListaMotociclete()) {
             System.out.println(m);
         }
-
 
         //afisare instante care satisfac doua conditii introduse de utilizator
         System.out.println("lista de motociclete electrice cu atas este: ");
