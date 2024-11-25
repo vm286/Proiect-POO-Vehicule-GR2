@@ -47,6 +47,10 @@ public boolean isJetType(){
         Avion Northrop = new Avion("Northrop", "B-2", 6, 1987, "Negru", 11000, 6, 20, "Jet x 2");
         Avion Cessna = new Avion("Cessna", "172", 7, 1955, "Alb cu Verde", 200, 5, 1, "Prop x 1");
         Avion Dakota = new Avion("Mcdonnel", "C-47", 8, 1941, "Kaki", 5000, 40, 50, "Prop x 2" );
+        Avion Concorde = new Avion("Concorde", "Concorde", 9, 1976, "Alb cu Albastru", 38000, 128, 100, "Turbojet x 4");
+        Avion Lockheed = new Avion("Lockheed", "SR-71 Blackbird", 10, 1966, "Negru", 34000, 80, 120, "Turbojet x 2");
+avioane.add(Concorde);
+avioane.add(Lockheed);
         avioane.add(Dakota);
         avioane.add(Cessna);
         avioane.add(Mcdonnel);
