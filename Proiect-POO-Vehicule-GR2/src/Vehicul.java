@@ -45,7 +45,5 @@ public class Vehicul {
     public String getCuloare(){
         return culoare;
     }
-
-    
 }
 

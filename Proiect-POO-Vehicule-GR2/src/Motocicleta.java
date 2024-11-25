@@ -45,12 +45,20 @@ public class Motocicleta extends Vehicul  {
                 (esteElectric ? " este electrica." : " nu este electrica.");
     }
 
+    public void setCilindree(int cilindree) {
+        this.cilindree = cilindree;
+    }
+
     public void setEsteElectric(boolean esteElectric) {
         this.esteElectric = esteElectric;
     }
 
     public void setAreAtas(boolean areAtas) {
         this.areAtas = areAtas;
+    }
+
+    public int getCilindree() {
+        return cilindree;
     }
 
     public boolean isEsteElectric() {
