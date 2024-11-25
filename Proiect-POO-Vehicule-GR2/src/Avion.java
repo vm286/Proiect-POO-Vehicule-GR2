@@ -23,6 +23,19 @@ public Avion(Avion a){
     this.cargolim = a.cargolim;
     this.tipMotor = a.tipMotor;
 }
+public boolean isPropType(){
+    if(this.tipMotor.indexOf("Turboprop")!=-1 || this.tipMotor.indexOf("Prop")!=-1){
+        return true;
+    }
+    return false;
+
+}
+public boolean isJetType(){
+    if(this.tipMotor.indexOf("Jet")!=-1){
+        return true;
+    }
+    return false;
+}
     //vector 10 elemente tip ArrayList
     public static ArrayList<Avion> getListaAvioane() {
         ArrayList<Avion> avioane = new ArrayList<>();
@@ -32,7 +45,16 @@ public Avion(Avion a){
         Avion Dassault = new Avion("Dassault", "Mirage", 4, 1978, "Industrial Grey", 3000, 1, 12, "Jet x 1");
         Avion Fairchild = new Avion("Fairchild", "A-10", 5, 1977, "Gri", 3000, 2, 8, "Jet x 2");
         Avion Northrop = new Avion("Northrop", "B-2", 6, 1987, "Negru", 11000, 6, 20, "Jet x 2");
-
+        Avion Cessna = new Avion("Cessna", "172", 7, 1955, "Alb cu Verde", 200, 5, 1, "Prop x 1");
+        Avion Dakota = new Avion("Mcdonnel", "C-47", 8, 1941, "Kaki", 5000, 40, 50, "Prop x 2" );
+        avioane.add(Dakota);
+        avioane.add(Cessna);
+        avioane.add(Mcdonnel);
+        avioane.add(Boeing);
+        avioane.add(Airbus);
+        avioane.add(Dassault);
+        avioane.add(Fairchild);
+        avioane.add(Northrop);
 
 
         return avioane;
