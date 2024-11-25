@@ -9,7 +9,7 @@ System.out.println(av);
 System.out.println(sub);
 Masina masina1 = new Masina(4,"Dacia",2010,"Rosu",1459,"sedan");
 System.out.println(masina1);
-Tractor tractor1= new Tractor(22,"Same",2010,"ROSU",110, "functional" );
+Tractor tractor1= new Tractor(22,"Same",2010,"ROSU",110, "nefunctional" , 25.5);
 System.out.println(tractor1);
 Tren IR1802 = new Tren(1802,"CFR",2004,"ALBASTRU",3,"NORMAL");
 System.out.println(IR1802);
