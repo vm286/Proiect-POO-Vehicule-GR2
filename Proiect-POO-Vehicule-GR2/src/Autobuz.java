@@ -3,6 +3,7 @@ public class Autobuz extends Vehicul {
     private int linie;
     private boolean aerConditionat;
     private String normaEmisii;
+    private boolean esteElectric;
 
     // Constructor fără argumente
     public Autobuz() {
@@ -11,15 +12,17 @@ public class Autobuz extends Vehicul {
         this.linie = 0;
         this.aerConditionat = false;
         this.normaEmisii = "Necunoscut";
+        this.esteElectric = false;
     }
 
     // Constructor cu toate argumentele
-    public Autobuz(int id, String marca, boolean aerConditionat, int anFabricatie, String culoare, int capacitatePasageri, int linie) {
+    public Autobuz(int id,boolean esteElectric, String normaEmisii, String marca, boolean aerConditionat, int anFabricatie, String culoare, int capacitatePasageri, int linie) {
         super(id, marca, anFabricatie, culoare);
         this.capacitatePasageri = capacitatePasageri;
         this.linie = linie;
         this.aerConditionat = aerConditionat;
         this.normaEmisii = normaEmisii;
+        this.esteElectric = esteElectric;
     }
 
     // Constructor de copiere
@@ -29,6 +32,7 @@ public class Autobuz extends Vehicul {
         this.linie = other.linie;
         this.aerConditionat = other.aerConditionat;
         this.normaEmisii = other.normaEmisii;
+        this.esteElectric = other.esteElectric;
     }
 
     // Metoda toString
