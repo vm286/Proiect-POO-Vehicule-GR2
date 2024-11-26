@@ -51,7 +51,12 @@ public Submarin() {
 
             return submarine;
         }
-
+public boolean isNuclear(){
+    if(this.tipCombustibil=="Nuclear"){
+        return true;
+    }
+    return false;
+}
 public String getMarca(){
     return "Submarinul nu are marca comerciala.";
 }
