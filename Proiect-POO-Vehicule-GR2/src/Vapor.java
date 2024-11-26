@@ -1,4 +1,4 @@
-public class Vapor extends Vehicul {
+public class Vapor extends Vehicul implements StareVehicul {
     private String tipVapor;
     private double tonaj;
     private boolean spargatorGheata;
@@ -16,13 +16,13 @@ public class Vapor extends Vehicul {
     }
 
     // Constructor cu argumentele
-    public Vapor(int id, String marca, int anFabricatie, String culoare, double tonaj, String tipVapor, boolean spargatorGheata, int capacitateEchipaj, String destinatie) {
+    public Vapor(int id, String tipVapor, boolean spargatorGheata, String marca, int anFabricatie, String culoare, double tonaj, int capacitateEchipaj, String traseu) {
         super(id, marca, anFabricatie, culoare);
         this.tonaj = tonaj;
         this.tipVapor = tipVapor;
         this.spargatorGheata = spargatorGheata;
         this.capacitateEchipaj = capacitateEchipaj;
-        this.traseu = destinatie;
+        this.traseu = traseu;
     }
 
     // Constructor de copiere
@@ -35,10 +35,55 @@ public class Vapor extends Vehicul {
         this.traseu = other.traseu;
     }
 
+    public void setTipVapor(String tipVapor) {
+        this.tipVapor = tipVapor;
+    }
+    public String getTipVapor() {
+        return tipVapor;
+    }
+
+    public void setSpargatorGheata(boolean spargatorGheata) {
+        this.spargatorGheata = spargatorGheata;
+    }
+    public boolean getSpargatorGheata() {
+        return spargatorGheata;
+    }
+
+    public void setTonaj(double tonaj) {
+        this.tonaj = tonaj;
+    }
+    public double getTonaj() {
+        return tonaj;
+    }
+
+    public void setTraseu(String traseu) {
+        this.traseu = traseu;
+    }
+    public String getTraseu() {
+        return traseu;
+    }
+
+    public void setCapacitateEchipaj(int capacitateEchipaj) {
+        this.capacitateEchipaj = capacitateEchipaj;
+    }
+    public int getCapacitateEchipaj() {
+        return capacitateEchipaj;
+    }
+
     // Metoda toString
     @Override
     public String toString() {
         return super.toString() + " este Vapor [Tonaj: " + tonaj + " tone, Tip: " + tipVapor + (spargatorGheata ? " este spărgător de gheață" : " nu este spărgător de gheață") + ", Capacitate Echipaj: " + capacitateEchipaj + ", Traseu: " + traseu + "]";
+    }
+
+    @Override
+    public void functional() {
+        System.out.println("Funcțional");
+    }
+
+    @Override
+    public void nefunctional() {
+        System.out.println("Nefuncțional");
     }
 }
 
