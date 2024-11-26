@@ -73,7 +73,7 @@ public class Vapor extends Vehicul implements StareVehicul {
     // Metoda toString
     @Override
     public String toString() {
-        return super.toString() + " este Vapor [Tonaj: " + tonaj + " tone, Tip: " + tipVapor + (spargatorGheata ? " este spărgător de gheață" : " nu este spărgător de gheață") + ", Capacitate Echipaj: " + capacitateEchipaj + ", Traseu: " + traseu + "]";
+        return super.toString() + " este Vapor [Tonaj: " + tonaj + " tone, Tip: " + tipVapor + (spargatorGheata ? ", este spărgător de gheață" : ", nu este spărgător de gheață") + ", Capacitate Echipaj: " + capacitateEchipaj + ", Traseu: " + traseu + "]";
     }
 
     @Override
