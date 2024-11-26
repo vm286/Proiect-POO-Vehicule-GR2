@@ -67,8 +67,7 @@ public class Tren extends Vehicul implements StareVehicul{
     // Metoda toString
     @Override
     public String toString() {
-        return super.toString() + " este Tren [Număr Vagoane: " + numarVagoane + ", Tip: " + tipTren + (esteElectric ? ", este electric" : ", nu este electric") + ", are ruta: " + ruta +
-                "și Viteza Maxima: " + vitezaMaxima + " km/h ]";
+        return super.toString() + " este Tren [Număr Vagoane: " + numarVagoane + ", Tip: " + tipTren + (esteElectric ? ", este electric" : ", nu este electric") + ", are ruta: " + ruta + " și Viteza Maxima: " + vitezaMaxima + " km/h ]";
     }
 
     @Override
