@@ -27,7 +27,7 @@ public Submarin() {
         public static ArrayList<Submarin> getListaSubmarine() {
             ArrayList<Submarin> submarine = new ArrayList<>();
 
-            Submarin Nautilus = new Submarin("Nautilus", 5000, 1, 1870, "Gri", 2500, "Diesel", "Lanseza torpile");
+            Submarin Nautilus = new Submarin("Nautilus", 5000, 1, 1870, "Gri", 2500, "Diesel", "Torpile");
             Submarin Ohio = new Submarin("Ohio", 16000, 2, 1981, "Verde", 800, "Nuclear", "Rachete balistice");
             Submarin Scorpion = new Submarin("Scorpion", 4000, 3, 1970, "Negru", 1500, "Diesel", "Torpile");
             Submarin Virginia = new Submarin("Virginia", 8800, 4, 2004, "Albastru", 2400, "Nuclear", "Rachete de croaziera");
@@ -56,6 +56,9 @@ public boolean isNuclear(){
         return true;
     }
     return false;
+}
+public String getTipArmament(){
+    return this.tipArmament;
 }
 public String getMarca(){
     return "Submarinul nu are marca comerciala.";
