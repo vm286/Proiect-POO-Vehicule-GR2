@@ -19,7 +19,7 @@ public class Test_Vlad {
         System.out.println(Sub3);
 
         Avion Av1 = new Avion();
-        Avion Av2 = new Avion("Fairchild", "A-10", 5, 1977, "Gri", 3000, 2, 8, "Jet x 2");
+        Avion Av2 = new Avion("Fairchild", "A-10", 5, 1977, "Gri", 3000, 2, 8, "Jet x 2", true);
         Avion Av3 = new Avion(Av1);
 
         System.out.println(Av1);
