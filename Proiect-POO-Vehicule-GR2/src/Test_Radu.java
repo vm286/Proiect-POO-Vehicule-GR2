@@ -22,19 +22,10 @@ public class Test_Radu {
         ArrayList<Masina> listamasini = Masina.getListaMasini();
         System.out.println("Lista de masini este: ");
         for (Masina m : Masina.getListaMasini()) {
+            if(m.getMarca()=="Dacia")
             System.out.println(m);
         }
-        //afisare instante care satisfac doua conditii
-        System.out.println("Lista de masini care un sub 150000km si 5 sau mai multe locuri: ");
-        for (Masina n : Masina.getListaMasini()) {
-            if (n.getNrKilometri() < 150000 && n.getNrLocuri() > 4)
-                System.out.println(n);
-        }
-        System.out.println("Lista masini care sunt mai noi de 2022 si faruri led ");
-        for (Masina p : Masina.getListaMasini()) {
-            if (p.getTip_faruri()=="LED" && p.getAnFabricatie()>2022)
-                System.out.println(p);
-        }
+
         Tractor JohnDeere = new Tractor(24, "John Deere", 2015, "VERDE", 150, "cauciucuri", 30.0, 7000, false);
         Tractor MasseyFerguson = new Tractor(20, "Massey Ferguson", 2012, "ROSU", 120, "cauciucuri", 28.0, 6000, false);
         Tractor NewHolland = new Tractor(18, "New Holland", 2018, "ALBASTRU", 140, "cauciucuri", 32.5, 4800, true);
@@ -66,7 +57,23 @@ public class Test_Radu {
 
         System.out.println("Lista de tractoare cu incacator si senile este: ");
         for (Tractor p : tractoare) {
-            if(p.getIncarcator()==true && p.getTip_roti()=="senile")
+            if(p.getIncarcator()==true && !p.getTip_roti().contains("senile"))
+                System.out.println(p);
+        }
+        System.out.println("Lista tractoare mai noi de 2015 si cu mai putin de 5000 de ore: ");
+        for (Tractor p : tractoare) {
+            if(p.getAnFabricatie()>2015 && p.getOre_functionare()<5000)
+                System.out.println(p);
+        }
+        //afisare instante care satisfac doua conditii
+        System.out.println("Lista de masini care un sub 150000km si 5 sau mai multe locuri: ");
+        for (Masina n : Masina.getListaMasini()) {
+            if (n.getNrKilometri() < 150000 && n.getNrLocuri() > 4)
+                System.out.println(n);
+        }
+        System.out.println("Lista masini care sunt mai noi de 2022 si faruri led ");
+        for (Masina p : Masina.getListaMasini()) {
+            if (p.getTip_faruri()=="LED" && p.getAnFabricatie()>2022)
                 System.out.println(p);
         }
     }

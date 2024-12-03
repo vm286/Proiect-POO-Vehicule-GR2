@@ -35,7 +35,7 @@ public class Tractor extends Vehicul{
     //Metoda toString
     @Override
     public String toString(){
-        return "Tractorul " + super.getMarca() + " cu puterea de " + cai_putere + " cp si are un consum de " + consum_combustibil + " si este " + tip_roti + " si acum are " + ore_functionare + " ore de functionare si " + (incarcator?" are incarcator ":" nu are incarcator ")+ ".";
+        return "Tractorul " + super.getMarca() +" din anul "+super.getAnFabricatie() +" cu puterea de " + cai_putere + " cp si are un consum de " + consum_combustibil + " si este " + tip_roti + " si acum are " + ore_functionare + " ore de functionare si " + (incarcator?"are incarcator ":"nu are incarcator ")+ ".";
     }
 
     public void setCai_putere(int cai_putere) {
