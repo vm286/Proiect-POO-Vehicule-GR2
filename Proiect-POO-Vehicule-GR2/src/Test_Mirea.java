@@ -37,8 +37,6 @@ public class Test_Mirea {
         trenuri.add(new Tren(11, "Intercity", true, "PKP", 2021, "Mov", 60, "Târgu Mureș - Alba Iulia", 160));
         trenuri.add(new Tren(12, "Marfar", false, "CP", 2015, "Verde", 50, "Satu Mare - Baia Mare", 75));
         trenuri.add(new Tren(13, "Personal", true, "JR", 2012, "Maro", 20, "Pitești - Craiova", 95));
-
-
         System.out.println("Lista de trenuri:");
         for (Tren t : trenuri) {
             System.out.println(t);
@@ -56,11 +54,18 @@ public class Test_Mirea {
         vapoare.add(new Vapor(21, "Pasageri", true, "Princess", 2021, "Mov", 11000.0, 65, "Sydney - Auckland"));
         vapoare.add(new Vapor(22, "Cargo", false, "ZIM", 2012, "Maro", 3500.0, 18, "Mombasa - Durban"));
         vapoare.add(new Vapor(23, "Pasageri", true, "Royal Caribbean", 2016, "Portocaliu", 15000.0, 80, "New York - Bermuda"));
-
         System.out.println("Lista de vapoare:");
         for (int i = 0; i < vapoare.size(); i++) {
             System.out.println(vapoare.get(i));
         }
+        System.out.println("\n");
+
+        vapoare.set(4,new Vapor(cargo));
+
+        for (int i = 0; i < vapoare.size(); i++) {
+            System.out.println(vapoare.get(i));
+        }
+
         System.out.println("\n");
 
         System.out.println("Trenuri electrice cu viteză minimă de 100 km/h:");
@@ -71,9 +76,26 @@ public class Test_Mirea {
         }
         System.out.println("\n");
 
-        System.out.println("Vapoare care nu sunt spărgătoare de gheață și au capacitate echipaj > 15:");
+        System.out.println("Trenuri care nu sunt electrice dar care sunt marfare:");
+        for (Tren t : trenuri) {
+            if (!t.getEsteElectric() && t.getTipTren().equals("Marfar")) {
+                System.out.println(t);
+            }
+        }
+        System.out.println("\n");
+
+
+        System.out.println("Vapoare care nu sunt spărgătoare de gheață și au capacitate echipaj mai mare de 15:");
         for (Vapor v : vapoare) {
             if (!v.getSpargatorGheata() && v.getCapacitateEchipaj() > 15) {
+                System.out.println(v);
+            }
+        }
+        System.out.println("\n");
+
+        System.out.println("Vapoare care sunt spărgătoare de gheață, au capacitate echipaj mai mare de 15 și culoarea portocalie:");
+        for (Vapor v : vapoare) {
+            if (v.getSpargatorGheata() && v.getCapacitateEchipaj() > 15 && v.getCuloare().equals("Portocaliu")) {
                 System.out.println(v);
             }
         }

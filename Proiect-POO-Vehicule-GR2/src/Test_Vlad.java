@@ -19,7 +19,7 @@ public class Test_Vlad {
         System.out.println(Sub3);
 
         Avion Av1 = new Avion();
-        Avion Av2 = new Avion("Fairchild", "A-10", 5, 1977, "Gri", 3000, 2, 8, "Jet x 2");
+        Avion Av2 = new Avion("Fairchild", "A-10", 5, 1977, "Gri", 3000, 2, 8, "Jet x 2", true);
         Avion Av3 = new Avion(Av1);
 
         System.out.println(Av1);
@@ -27,19 +27,20 @@ public class Test_Vlad {
         System.out.println(Av3);
         ArrayList<Submarin> Submarine = Submarin.getListaSubmarine();
         ArrayList<Avion> avioane = Avion.getListaAvioane();
+
         System.out.println("Lista avioanelor:");
         for(Avion av : Avion.getListaAvioane()) {
             System.out.println(av);
         }
-        System.out.println("Lista avioane cu motor cu reactie:");
+        System.out.println("Lista avioane cu motor cu reactie care au scop militar:");
         for(Avion av : avioane) {
-            if(av.isJetType()){
+            if(av.getMarca().equals("Airbus") && !av.isMil()){
                 System.out.println(av);
             }
         }
-        System.out.println("Lista avioane cu elice:");
+        System.out.println("Lista avioane cu elice care au scop militar:");
         for(Avion av : avioane) {
-            if(av.isJetType()==false){
+            if(!av.isJetType() && av.isMil()){
                 System.out.println(av);
             }
         }
@@ -47,18 +48,23 @@ public class Test_Vlad {
         for(Submarin sub : Submarine) {
             System.out.println(sub);
         }
-        System.out.println("Lista submarine cu combustibil nuclear:");
+        System.out.println("Lista submarine cu combustibil nuclear si cu armament acvatic:");
         for(Submarin sub : Submarine) {
-            if(sub.isNuclear()){
+            if(sub.isNuclear() && sub.getTipArmament().contains("Torpile")){
                 System.out.println(sub);
             }
         }
-        System.out.println("Lista submarine cu combustibil conventional:");
+        System.out.println("Lista submarine cu combustibil conventional si cu armament balistice:");
         for(Submarin sub : Submarine) {
-            if(sub.isNuclear()==false){
+            if(!sub.isNuclear() && sub.getTipArmament().contains("Rachete")){
                 System.out.println(sub);
             }
         }
-        
+        System.out.println("Lista submarine cu ID par:");
+        for(Submarin sub : Submarine) {
+            if(sub.getId()%2==0){
+                System.out.println(sub);
+            }
+        }
     }
 }

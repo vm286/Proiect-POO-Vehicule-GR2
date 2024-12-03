@@ -78,12 +78,12 @@ public class Vapor extends Vehicul implements StareVehicul {
 
     @Override
     public void functional() {
-        System.out.println("Funcțional");
+        System.out.println("Vapor Funcțional");
     }
 
     @Override
     public void nefunctional() {
-        System.out.println("Nefuncțional");
+        System.out.println("Vapor Nefuncțional");
     }
 }
 

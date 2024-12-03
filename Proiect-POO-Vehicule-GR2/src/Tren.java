@@ -64,6 +64,13 @@ public class Tren extends Vehicul implements StareVehicul{
         return vitezaMaxima;
     }
 
+    public void setTipTren(String tipTren) {
+        this.tipTren = tipTren;
+    }
+    public String getTipTren() {
+        return tipTren;
+    }
+
     // Metoda toString
     @Override
     public String toString() {
@@ -72,11 +79,11 @@ public class Tren extends Vehicul implements StareVehicul{
 
     @Override
     public void functional() {
-        System.out.println("Funcțional");
+        System.out.println("Tren Funcțional");
     }
 
     @Override
     public void nefunctional() {
-        System.out.println("Nefuncțional");
+        System.out.println("Tren Nefuncțional");
     }
 }

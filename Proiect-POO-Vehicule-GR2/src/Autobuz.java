@@ -1,4 +1,7 @@
+import java.util.Objects;
+
 public class Autobuz extends Vehicul {
+    public int getLinie;
     private int capacitatePasageri;
     private int linie;
     private boolean aerConditionat;
@@ -43,6 +46,18 @@ public class Autobuz extends Vehicul {
         this.esteElectric = esteElectric;
     }
 
+    public void setNormaEmisii(String normaEmisii) {
+        this.normaEmisii = normaEmisii;
+    }
+
+    public void setLinie(int linie) {
+        this.linie = linie;
+    }
+
+    public void setCapacitatePasageri(int capacitatePasageri) {
+        this.capacitatePasageri = capacitatePasageri;
+    }
+
     public boolean isAerConditionat() {
         return aerConditionat;
     }
@@ -51,11 +66,29 @@ public class Autobuz extends Vehicul {
         return esteElectric;
     }
 
+    public String getNormaEmisii() {
+        return normaEmisii;
+    }
+
+    public int getLinie() {
+        return getLinie;
+    }
+
+    public int getCapacitatePasageri() {
+        return capacitatePasageri;
+    }
+
+
+    @Override
+    public int hashCode() {
+        return Objects.hashCode(linie);
+    }
+
     // Metoda toString
     @Override
     public String toString() {
         return "Autobuzul " + super.getMarca() + " cu " + capacitatePasageri +
-                " locuri si care circula pe" + linie + " linia "+
+                " locuri si care circula pe" + " linia "+ linie+
                 (aerConditionat ? " are aer conditionat." : " nu are aer conditionat.");
     }
 

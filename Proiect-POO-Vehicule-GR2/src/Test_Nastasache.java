@@ -49,14 +49,14 @@ public class Test_Nastasache {
         }
     //metoda for-each cu scrierea listei in clasa test
         Autobuz mercedes= new Autobuz(1,true,"euro6","Mercedes",true,2019,"alb",60,52);
-        Autobuz volvo= new Autobuz(2,false,"euro3","Volvo",true,2017,"alb",60,40);
+        Autobuz volvo= new Autobuz(2,false,"euro4","Volvo",true,2017,"alb",60,40);
         Autobuz iveco = new Autobuz(3,false,"euro2","Iveco",true,2013,"negru",50,33);
         Autobuz Iveco =new Autobuz(4,true,"euro6","Iveco",true,2020,"gri",35,20);
         Autobuz scania= new Autobuz(5,true,"euro6","Scania",true,2019,"alb",60,51);
         Autobuz volvo2= new Autobuz(6,false,"euro3","Volvo",true,2017,"alb",65,43);
         Autobuz scania2 = new Autobuz(7,false,"euro2","Scania",true,2013,"negru",50,35);
         Autobuz scania3 =new Autobuz(8,true,"euro6","Scania",true,2020,"gri",35,25);
-        Autobuz man= new Autobuz(9,true,"euro6","MAN",true,2019,"alb",60,70);
+        Autobuz man= new Autobuz(9,true,"euro4","MAN",true,2019,"alb",60,40);
         Autobuz man2= new Autobuz(10,false,"euro3","MAN",true,2009,"alb",48,76);
 
         ArrayList<Autobuz> autobuze = new ArrayList<>();
@@ -83,11 +83,18 @@ public class Test_Nastasache {
             if (n.isEsteElectric() && n.isAerConditionat())
                 System.out.println(n);
         }
-        System.out.println("lista de motociclete electrice fara aer conditionat este: ");
-        for (Autobuz n : autobuze) {
-            if (n.isEsteElectric() && !n.isAerConditionat())
+        System.out.println("lista de motociclete electrice fara atas: ");
+        for (Motocicleta n : listaMotociclete) {
+            if (n.isEsteElectric() && !n.isAreAtas())
                 System.out.println(n);
         }
+        System.out.println("Lista de autobuze cu norma de emisii Euro 4 si care circula pe linia specificata:");
+        for (Autobuz n : autobuze) {
+            if (n.getNormaEmisii().equals("euro4") && n.getLinie()<50) {
+                System.out.println(n);
+            }
+        }
+
 
     }
 
