@@ -34,13 +34,13 @@ public class Test_Vlad {
         }
         System.out.println("Lista avioane cu motor cu reactie care au scop militar:");
         for(Avion av : avioane) {
-            if(av.isJetType() && av.isMil()){
+            if(av.getMarca().equals("Airbus") && !av.isMil()){
                 System.out.println(av);
             }
         }
         System.out.println("Lista avioane cu elice care au scop militar:");
         for(Avion av : avioane) {
-            if(av.isJetType()==false && av.isMil()){
+            if(!av.isJetType() && av.isMil()){
                 System.out.println(av);
             }
         }
