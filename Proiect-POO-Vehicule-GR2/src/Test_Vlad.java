@@ -1,8 +1,9 @@
 import java.awt.*;
 import java.util.ArrayList;
-
+import java.io.*;
 public class Test_Vlad {
     public static void main(String[] args) {
+
         Vehicul Echo1 = new Vehicul();
         Vehicul Echo2 = new Vehicul(1,"Oceaniada",2011,"Galben");
         Vehicul Echo4 = new Vehicul(Echo2);
@@ -27,7 +28,8 @@ public class Test_Vlad {
         System.out.println(Av3);
         ArrayList<Submarin> Submarine = Submarin.getListaSubmarine();
         ArrayList<Avion> avioane = Avion.getListaAvioane();
-
+        ArrayList<Submarin> submarine2 = null;
+        ArrayList<Avion> avioane2 = null;
         System.out.println("Lista avioanelor:");
         for(Avion av : Avion.getListaAvioane()) {
             System.out.println(av);
@@ -65,6 +67,43 @@ public class Test_Vlad {
             if(sub.getId()%2==0){
                 System.out.println(sub);
             }
+        }
+        try{
+            // Create new file
+            String content = "This is the content to write into create file";
+            File file = new File("text.txt");
+            // If file doesn't exists, then create it
+            if (!file.exists()) {
+                file.createNewFile();
+            }
+
+            FileWriter fw = new FileWriter(file.getAbsoluteFile());
+            BufferedWriter bw = new BufferedWriter(fw);
+
+            // Write in file
+            for(Submarin sub : Submarine) {
+                bw.write(sub.toString());
+            }
+            for(Avion av : avioane) {
+                bw.write(av.toString());
+            }
+
+
+            // Close connection
+            bw.close();
+        }
+        catch(Exception e){
+            System.out.println(e);
+        }
+        try (BufferedReader br = new BufferedReader(new FileReader(new File("text.txt")))) {
+            String line;
+
+            // Read file line by line
+            while ((line = br.readLine()) != null) {
+                System.out.println(line);
+            }
+        } catch (IOException e) {
+            System.out.println("Error reading the file: " + e.getMessage());
         }
     }
 }
