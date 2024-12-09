@@ -60,6 +60,7 @@ public boolean isNuclear(){
 public String getTipArmament(){
     return this.tipArmament;
 }
+public int getAdancimeMax(){return this.adancimeMax;}
 public String getMarca(){
     return "Submarinul nu are marca comerciala.";
 }
@@ -69,7 +70,7 @@ public String getMarca(){
             return "Nu a fost definit.";
         }
         else{
-            return "Submarin model "+model+" de tonaj:"+tonaj+" de tone."    ;
+            return this.getId()+". Submarin model "+model+" de tonaj:"+tonaj+" de tone, adancime maxima de: "+adancimeMax+"  cu combustibil "+tipCombustibil+" si cu armamentul: "+tipArmament+" ,fabricat in "+getAnFabricatie()+"\n";
         }
     }
     @Override
