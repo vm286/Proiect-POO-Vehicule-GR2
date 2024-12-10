@@ -18,23 +18,23 @@
 
 10. Submarin model Red October de tonaj:18000 de tone, adancime maxima de: 800  cu combustibil Nuclear cu culoare: Negru si cu armamentul: Torpile si rachete balistice ,fabricat in 1985
 
-1. Avion de marca marca , de model DC117,, care poate transporta 78 de oameni, 7825 de tone de marfa cu motor tip Turboprop x 4 cu culoare: Argintiu cu raza: 3000 fabricat in anul: 1967 cu scop civil
+1. Avion de marca marca marca Mcdonnel, de model DC117, care poate transporta 78 de oameni, 78 de tone de marfa cu motor tip Turboprop x 4 cu culoare: Argintiu cu raza: 3000km fabricat in anul: 1967 cu scop civil
 
-2. Avion de marca marca , de model 777,, care poate transporta 99 de oameni, 99150 de tone de marfa cu motor tip Turbofan x 4 cu culoare: Alb cu raza: 23000 fabricat in anul: 2008 cu scop civil
+2. Avion de marca marca marca Boeing, de model 777, care poate transporta 99 de oameni, 99 de tone de marfa cu motor tip Turbofan x 4 cu culoare: Alb cu raza: 23000km fabricat in anul: 2008 cu scop civil
 
-3. Avion de marca marca , de model A220,, care poate transporta 120 de oameni, 120225 de tone de marfa cu motor tip Turbofan x 4 cu culoare: Alb cu raza: 22500 fabricat in anul: 2012 cu scop civil
+3. Avion de marca marca marca Airbus, de model A220, care poate transporta 120 de oameni, 120 de tone de marfa cu motor tip Turbofan x 4 cu culoare: Alb cu raza: 22500km fabricat in anul: 2012 cu scop civil
 
-4. Avion de marca marca , de model Mirage,, care poate transporta 1 de oameni, 112 de tone de marfa cu motor tip Jet x 1 cu culoare: Industrial Grey cu raza: 3000 fabricat in anul: 1978 cu scop militar
+4. Avion de marca marca marca Dassault, de model Mirage, care poate transporta 1 de oameni, 1 de tone de marfa cu motor tip Jet x 1 cu culoare: Industrial Grey cu raza: 3000km fabricat in anul: 1978 cu scop militar
 
-5. Avion de marca marca , de model A-10,, care poate transporta 2 de oameni, 28 de tone de marfa cu motor tip Jet x 2 cu culoare: Gri cu raza: 3000 fabricat in anul: 1977 cu scop militar
+5. Avion de marca marca marca Fairchild, de model A-10, care poate transporta 2 de oameni, 2 de tone de marfa cu motor tip Jet x 2 cu culoare: Gri cu raza: 3000km fabricat in anul: 1977 cu scop militar
 
-6. Avion de marca marca , de model B-2,, care poate transporta 6 de oameni, 620 de tone de marfa cu motor tip Jet x 2 cu culoare: Negru cu raza: 11000 fabricat in anul: 1987 cu scop militar
+6. Avion de marca marca marca Northrop, de model B-2, care poate transporta 6 de oameni, 6 de tone de marfa cu motor tip Jet x 2 cu culoare: Negru cu raza: 11000km fabricat in anul: 1987 cu scop militar
 
-7. Avion de marca marca , de model 172,, care poate transporta 5 de oameni, 51 de tone de marfa cu motor tip Prop x 1 cu culoare: Alb cu Verde cu raza: 200 fabricat in anul: 1955 cu scop civil
+7. Avion de marca marca marca Cessna, de model 172, care poate transporta 5 de oameni, 5 de tone de marfa cu motor tip Prop x 1 cu culoare: Alb cu Verde cu raza: 200km fabricat in anul: 1955 cu scop civil
 
-8. Avion de marca marca , de model C-47,, care poate transporta 40 de oameni, 4050 de tone de marfa cu motor tip Prop x 2 cu culoare: Kaki cu raza: 5000 fabricat in anul: 1941 cu scop militar
+8. Avion de marca marca marca Mcdonnel, de model C-47, care poate transporta 40 de oameni, 40 de tone de marfa cu motor tip Prop x 2 cu culoare: Kaki cu raza: 5000km fabricat in anul: 1941 cu scop militar
 
-9. Avion de marca marca , de model Concorde,, care poate transporta 128 de oameni, 128100 de tone de marfa cu motor tip Turbojet x 4 cu culoare: Alb cu Albastru cu raza: 38000 fabricat in anul: 1976 cu scop civil
+9. Avion de marca marca marca Concorde, de model Concorde, care poate transporta 128 de oameni, 128 de tone de marfa cu motor tip Turbojet x 4 cu culoare: Alb cu Albastru cu raza: 38000km fabricat in anul: 1976 cu scop civil
 
-10. Avion de marca marca , de model SR-71 Blackbird,, care poate transporta 80 de oameni, 80120 de tone de marfa cu motor tip Turbojet x 2 cu culoare: Negru cu raza: 34000 fabricat in anul: 1966 cu scop militar
+10. Avion de marca marca marca Lockheed, de model SR-71 Blackbird, care poate transporta 80 de oameni, 80 de tone de marfa cu motor tip Turbojet x 2 cu culoare: Negru cu raza: 34000km fabricat in anul: 1966 cu scop militar
 
