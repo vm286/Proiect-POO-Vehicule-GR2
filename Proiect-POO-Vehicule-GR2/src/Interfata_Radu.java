@@ -1,4 +1,5 @@
 import javax.swing.*;
+import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.io.*;
@@ -169,6 +170,7 @@ public class Interfata_Radu extends JFrame {
     public static void main(String[] args) {
         Interfata_Radu interfata = new Interfata_Radu();
         interfata.setTitle("Interfata Vehicule");
+        interfata.getContentPane().setBackground(new Color(210,255,255));
 
     }
 }
