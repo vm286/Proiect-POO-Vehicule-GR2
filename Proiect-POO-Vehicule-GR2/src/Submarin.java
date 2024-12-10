@@ -52,7 +52,7 @@ public Submarin() {
             return submarine;
         }
 public boolean isNuclear(){
-    if(this.tipCombustibil=="Nuclear"){
+    if(this.tipCombustibil.contains("Nuclear")){
         return true;
     }
     return false;
@@ -70,7 +70,7 @@ public String getMarca(){
             return "Nu a fost definit.";
         }
         else{
-            return this.getId()+". Submarin model "+model+" de tonaj:"+tonaj+" de tone, adancime maxima de: "+adancimeMax+"  cu combustibil "+tipCombustibil+" si cu armamentul: "+tipArmament+" ,fabricat in "+getAnFabricatie()+"\n";
+            return this.getId()+". Submarin model "+model+" de tonaj:"+tonaj+" de tone, adancime maxima de: "+adancimeMax+"  cu combustibil "+tipCombustibil+" cu culoare: "+getCuloare()+" si cu armamentul: "+tipArmament+" ,fabricat in "+getAnFabricatie()+"\n";
         }
     }
     @Override

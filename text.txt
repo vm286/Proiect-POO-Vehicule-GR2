@@ -1,13 +1,20 @@
-1. Submarin model Nautilus de tonaj:5000 de tone, adancime maxima de: 2500  cu combustibil Diesel si cu armamentul: Torpile ,fabricat in 1870
-2. Submarin model Ohio de tonaj:16000 de tone, adancime maxima de: 800  cu combustibil Nuclear si cu armamentul: Rachete balistice ,fabricat in 1981
-3. Submarin model Scorpion de tonaj:4000 de tone, adancime maxima de: 1500  cu combustibil Diesel si cu armamentul: Torpile ,fabricat in 1970
-8. Submarin model Typhoon de tonaj:24000 de tone, adancime maxima de: 600  cu combustibil Nuclear si cu armamentul: Rachete balistice intercontinentale ,fabricat in 1989
-9. Submarin model Dolphin de tonaj:1500 de tone, adancime maxima de: 2000  cu combustibil Diesel si cu armamentul: Torpile ,fabricat in 1999
-10. Submarin model Red October de tonaj:18000 de tone, adancime maxima de: 800  cu combustibil Nuclear si cu armamentul: Torpile si rachete balistice ,fabricat in 1985
-9. Avion de marca marca Concorde, de model Concorde, care poate transporta 128 de oameni, 100 de tone de marfa cu motor tip Turbojet x 4 cu raza: 38000 fabricat in anul: 1976 cu scop civil
+1. Submarin model Nautilus de tonaj:5000 de tone, adancime maxima de: 2500  cu combustibil Diesel cu culoare: Gri si cu armamentul: Torpile ,fabricat in 1870
+2. Submarin model Ohio de tonaj:16000 de tone, adancime maxima de: 800  cu combustibil Nuclear cu culoare: Verde si cu armamentul: Rachete balistice ,fabricat in 1981
+3. Submarin model Scorpion de tonaj:4000 de tone, adancime maxima de: 1500  cu combustibil Diesel cu culoare: Negru si cu armamentul: Torpile ,fabricat in 1970
+4. Submarin model Virginia de tonaj:8800 de tone, adancime maxima de: 2400  cu combustibil Nuclear cu culoare: Albastru si cu armamentul: Rachete de croaziera ,fabricat in 2004
+5. Submarin model Seawolf de tonaj:12000 de tone, adancime maxima de: 2500  cu combustibil Nuclear cu culoare: Gri si cu armamentul: Torpile si rachete ,fabricat in 1997
+6. Submarin model Kilo de tonaj:3300 de tone, adancime maxima de: 500  cu combustibil Diesel cu culoare: Verde inchis si cu armamentul: Torpile ,fabricat in 1982
+7. Submarin model Barracuda de tonaj:6500 de tone, adancime maxima de: 1500  cu combustibil Nuclear cu culoare: Albastru inchis si cu armamentul: Rachete si torpile ,fabricat in 2018
+8. Submarin model Typhoon de tonaj:24000 de tone, adancime maxima de: 600  cu combustibil Nuclear cu culoare: Gri inchis si cu armamentul: Rachete balistice intercontinentale ,fabricat in 1989
+9. Submarin model Dolphin de tonaj:1500 de tone, adancime maxima de: 2000  cu combustibil Diesel cu culoare: Albastru deschis si cu armamentul: Torpile ,fabricat in 1999
+10. Submarin model Red October de tonaj:18000 de tone, adancime maxima de: 800  cu combustibil Nuclear cu culoare: Negru si cu armamentul: Torpile si rachete balistice ,fabricat in 1985
+9. Avion de marca marca Concorde, de model Concorde, care poate transporta 128 de oameni, 100 de tone de marfa cu motor tip Turbojet x 4 cu culoare: Alb cu Albastru cu raza: 38000 fabricat in anul: 1976 cu scop civil
 10. Avion de marca marca Lockheed, de model SR-71 Blackbird, care poate transporta 80 de oameni, 120 de tone de marfa cu motor tip Turbojet x 2 cu culoare: Negru cu raza: 34000 fabricat in anul: 1966 cu scop militar
 8. Avion de marca marca Mcdonnel, de model C-47, care poate transporta 40 de oameni, 50 de tone de marfa cu motor tip Prop x 2 cu culoare: Kaki cu raza: 5000 fabricat in anul: 1941 cu scop militar
-7. Avion de marca marca Cessna, de model 172, care poate transporta 5 de oameni, 1 de tone de marfa cu motor tip Prop x 1 cu raza: 200 fabricat in anul: 1955 cu scop civil
-1. Avion de marca marca Mcdonnel, de model DC117, care poate transporta 78 de oameni, 25 de tone de marfa cu motor tip Turboprop x 4 cu raza: 3000 fabricat in anul: 1967 cu scop civil
-2. Avion de marca marca Boeing, de model 777, care poate transporta 99 de oameni, 150 de tone de marfa cu motor tip Turbofan x 4 cu raza: 23000 fabricat in anul: 2008 cu scop civil
-3. Avion de marca marca Airbus, de model A220, care poate transporta 120 de oameni, 225 de tone de marfa cu motor tip Turbofan x 4 cu raza: 22500 fabricat in anul: 2012 cu scop civil
+7. Avion de marca marca Cessna, de model 172, care poate transporta 5 de oameni, 1 de tone de marfa cu motor tip Prop x 1 cu culoare: Alb cu Verde cu raza: 200 fabricat in anul: 1955 cu scop civil
+1. Avion de marca marca Mcdonnel, de model DC117, care poate transporta 78 de oameni, 25 de tone de marfa cu motor tip Turboprop x 4 cu culoare: Argintiu cu raza: 3000 fabricat in anul: 1967 cu scop civil
+2. Avion de marca marca Boeing, de model 777, care poate transporta 99 de oameni, 150 de tone de marfa cu motor tip Turbofan x 4 cu culoare: Alb cu raza: 23000 fabricat in anul: 2008 cu scop civil
+3. Avion de marca marca Airbus, de model A220, care poate transporta 120 de oameni, 225 de tone de marfa cu motor tip Turbofan x 4 cu culoare: Alb cu raza: 22500 fabricat in anul: 2012 cu scop civil
+4. Avion de marca marca Dassault, de model Mirage, care poate transporta 1 de oameni, 12 de tone de marfa cu motor tip Jet x 1 cu culoare: Industrial Grey cu raza: 3000 fabricat in anul: 1978 cu scop militar
+5. Avion de marca marca Fairchild, de model A-10, care poate transporta 2 de oameni, 8 de tone de marfa cu motor tip Jet x 2 cu culoare: Gri cu raza: 3000 fabricat in anul: 1977 cu scop militar
+6. Avion de marca marca Northrop, de model B-2, care poate transporta 6 de oameni, 20 de tone de marfa cu motor tip Jet x 2 cu culoare: Negru cu raza: 11000 fabricat in anul: 1987 cu scop militar
