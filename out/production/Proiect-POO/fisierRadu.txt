@@ -1,0 +1,3 @@
+Masina: 2, Ford, 2020, Negru, 2000, coupe, 45000, 2, xenon
+
+Tractor: 24, John Deere, 2015, VERDE, 150, cauciucuri, 30.0, 7000, false

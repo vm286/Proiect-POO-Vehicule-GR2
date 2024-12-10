@@ -24,14 +24,6 @@
         </constraints>
         <properties/>
       </component>
-      <component id="f71c1" class="javax.swing.JButton" binding="okButton">
-        <constraints>
-          <grid row="9" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
-        </constraints>
-        <properties>
-          <text value="OK"/>
-        </properties>
-      </component>
       <component id="b1522" class="javax.swing.JButton" binding="resetButton">
         <constraints>
           <grid row="9" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
@@ -98,10 +90,34 @@
       </component>
       <component id="3cd1f" class="javax.swing.JCheckBox" binding="consumCheckBox">
         <constraints>
-          <grid row="6" column="0" row-span="3" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+          <grid row="6" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
           <text value="Consum"/>
+        </properties>
+      </component>
+      <component id="f71c1" class="javax.swing.JButton" binding="okButton">
+        <constraints>
+          <grid row="7" column="0" row-span="2" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="OK"/>
+        </properties>
+      </component>
+      <component id="f0837" class="javax.swing.JButton" binding="savebutton">
+        <constraints>
+          <grid row="9" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="SAVE"/>
+        </properties>
+      </component>
+      <component id="d10f1" class="javax.swing.JRadioButton" binding="citestedinfisierButton">
+        <constraints>
+          <grid row="9" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="DIN FISIER"/>
         </properties>
       </component>
     </children>

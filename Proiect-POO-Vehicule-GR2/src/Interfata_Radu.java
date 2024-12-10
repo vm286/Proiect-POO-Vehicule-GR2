@@ -1,11 +1,8 @@
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.io.*;
 import java.util.ArrayList;
-import java.io.BufferedReader;
-import java.io.FileInputStream;
-import java.io.IOException;
-import java.io.InputStreamReader;
 
 public class Interfata_Radu extends JFrame {
     private JPanel interfata;
@@ -21,9 +18,13 @@ public class Interfata_Radu extends JFrame {
     private JCheckBox incarcatorCheckBox;
     private JCheckBox tipCauciucuriCheckBox;
     private JCheckBox consumCheckBox;
+    private JButton savebutton;
+    private JRadioButton citestedinfisierButton;
 
     ArrayList<Masina> masinile = Masina.getListaMasini();
     ArrayList<Tractor> tractoarele = Tractor.getListaTractor();
+    ArrayList<Masina> masinute= new ArrayList<>();
+    ArrayList<Tractor> tractoare= new ArrayList<>();
 
     public Interfata_Radu() {
         setContentPane(interfata);
@@ -64,8 +65,9 @@ public class Interfata_Radu extends JFrame {
             @Override
             public void actionPerformed(ActionEvent e) {
                 textArea.setText(""); // Resetăm zona de text
+                boolean dinfisier=citestedinfisierButton.isSelected();
                 if (masina.isSelected()) {
-                    for (Masina m : masinile) {
+                    for (Masina m : (dinfisier?masinute:masinile)) {
                         boolean conditions = true;
                         if (ledCheckBox.isSelected() && !m.getTip_faruri().equalsIgnoreCase("LED")) {
                             conditions = false;
@@ -81,8 +83,9 @@ public class Interfata_Radu extends JFrame {
                         }
                     }
                 }
+
                 if (tractor.isSelected()) {
-                    for (Tractor t : tractoarele) {
+                    for (Tractor t : (dinfisier?tractoare:tractoarele)) {
                         boolean conditions = true;
                         if (incarcatorCheckBox.isSelected() && !t.getIncarcator()) {
                             conditions = false;
@@ -107,28 +110,50 @@ public class Interfata_Radu extends JFrame {
                 textArea.setText("");
             }
         });
+        citestedinfisierButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                try{
+                    FileInputStream fin = new FileInputStream("C:\\Users\\ionra\\Documents\\faculta\\proiecte_poo_java\\Proiect-POO\\Proiect-POO-Vehicule-GR2\\src\\fisierRadu.txt");
+                    BufferedReader br = new BufferedReader(new InputStreamReader(fin));
+                    String linie;
+
+                    while ((linie = br.readLine()) != null) {
+                        if (linie.startsWith("Masina: ")) {
+                            String[] valori = linie.split(": ")[1].split(", ");
+                            masinute.add(new Masina(Integer.parseInt(valori[0]), valori[1], Integer.parseInt(valori[2]), valori[3], Integer.parseInt(valori[4]),valori[5],Integer.parseInt(valori[6]),Integer.parseInt(valori[7]),valori[8]));
+                        } else if (linie.startsWith("Tractor: ")) {
+                        String[] valori = linie.split(": ")[1].split(", ");
+                        tractoare.add(new Tractor(Integer.parseInt(valori[0]), valori[1], Integer.parseInt(valori[2]), valori[3], Integer.parseInt(valori[4]),valori[5],Double.parseDouble(valori[6]),Integer.parseInt(valori[7]),Boolean.parseBoolean(valori[8])));
+                        }
+                    }
+                } catch (
+                        IOException f) {
+                    System.out.println("[EROARE!] " + f.getMessage());
+                }
+            }
+        });
+        savebutton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                JFileChooser fileChooser = new JFileChooser();
+                int result = fileChooser.showSaveDialog(interfata);
+                if (result == JFileChooser.APPROVE_OPTION) {
+                    File file = fileChooser.getSelectedFile();
+                    try (BufferedWriter bw = new BufferedWriter(new FileWriter(file))) {
+                        bw.write(textArea.getText());
+                        JOptionPane.showMessageDialog(interfata, "Rezultatele au fost salvate.");
+                    } catch (IOException ex) {
+                        JOptionPane.showMessageDialog( interfata,"Eroare la salvarea fișierului.");
+                    }
+                }
+            }
+        });
     }
 
     public static void main(String[] args) {
         Interfata_Radu interfata = new Interfata_Radu();
         interfata.setTitle("Interfata");
-        /*try{
-            FileInputStream fin = new FileInputStream("C:\\Users\\ionra\\Documents\\faculta\\proiecte_poo_java\\Brutarie3\\src\\fisier.txt");
-            BufferedReader br = new BufferedReader(new InputStreamReader(fin));
-            String linie;
 
-            while ((linie = br.readLine()) != null) {
-                if (linie.startsWith("Covrig: ")) {
-                    String[] valori = linie.split(": ")[1].split(", ");
-                    listacovrigi.add(new Covrig(valori[0], Boolean.parseBoolean(valori[1]), valori[2], Boolean.parseBoolean(valori[3]), valori[4]));
-                } //else if (linie.startsWith("Corn: ")) {
-                //String[] valori = linie.split(": ")[1].split(", ");
-                //listacorn.add(new Corn(valori[0], Boolean.parseBoolean(valori[1]), valori[2]));
-                //}
-            }
-        } catch (
-                IOException e) {
-            System.out.println("[EROARE!] " + e.getMessage());
-        }*/
     }
 }
