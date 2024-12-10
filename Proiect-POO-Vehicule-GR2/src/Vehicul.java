@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 public class Vehicul implements StareVehicul {
     private int id;
     private String marca;
@@ -71,6 +72,21 @@ public class Vehicul implements StareVehicul {
     @Override
     public void nefunctional() {
         System.out.println("Nefuncțional");
+    }
+
+    public static ArrayList<Vehicul> getListaVehicule() {
+        ArrayList<Vehicul> vehicules = new ArrayList<>();
+        Vehicul bicicleta= new Vehicul(42,"SantaCruz",2024,"galbena");
+        Vehicul trotinetaElectrica = new Vehicul(78, "EcoRide", 2022, "Alb");
+        Vehicul motocicletaSport = new Vehicul(47, "Kawasaki Ninja", 2019, "Verde");
+        Vehicul masinaSUV = new Vehicul(94, "Toyota RAV4", 2021, "Gri");
+        Vehicul bicicletaMountainBike = new Vehicul(88, "Cube Reaction", 2020, "Albastru");
+        vehicules.add(bicicleta);
+        vehicules.add(trotinetaElectrica);
+        vehicules.add(masinaSUV);
+        vehicules.add(bicicletaMountainBike);
+        vehicules.add(motocicletaSport);
+        return vehicules;
     }
 }
 

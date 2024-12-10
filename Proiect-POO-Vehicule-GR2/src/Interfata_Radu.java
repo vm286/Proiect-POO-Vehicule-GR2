@@ -6,7 +6,7 @@ import java.util.ArrayList;
 
 public class Interfata_Radu extends JFrame {
     private JPanel interfata;
-    private JLabel nume;
+    private JRadioButton vehiculebutton;
     private JButton okButton;
     private JButton resetButton;
     private JTextArea textArea;
@@ -23,13 +23,15 @@ public class Interfata_Radu extends JFrame {
 
     ArrayList<Masina> masinile = Masina.getListaMasini();
     ArrayList<Tractor> tractoarele = Tractor.getListaTractor();
+    ArrayList<Vehicul> vehicule =Vehicul.getListaVehicule();
     ArrayList<Masina> masinute= new ArrayList<>();
     ArrayList<Tractor> tractoare= new ArrayList<>();
+    ArrayList<Vehicul> vehicule2= new ArrayList<>();
 
     public Interfata_Radu() {
         setContentPane(interfata);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        setSize(1200, 800);
+        setSize(1400, 800);
         setLocationRelativeTo(null);
         setVisible(true);
 
@@ -72,10 +74,10 @@ public class Interfata_Radu extends JFrame {
                         if (ledCheckBox.isSelected() && !m.getTip_faruri().equalsIgnoreCase("LED")) {
                             conditions = false;
                         }
-                        if (locuriCheckBox.isSelected() && m.getNrLocuri() <= 5) {
+                        if (locuriCheckBox.isSelected() && m.getNrLocuri() != 2) {
                             conditions = false;
                         }
-                        if (caroserieCheckBox.isSelected() && !m.getTip_caroserie().equalsIgnoreCase("Sedan")) {
+                        if (caroserieCheckBox.isSelected() && !m.getTip_caroserie().equalsIgnoreCase("SUV")) {
                             conditions = false;
                         }
                         if (conditions) {
@@ -90,15 +92,20 @@ public class Interfata_Radu extends JFrame {
                         if (incarcatorCheckBox.isSelected() && !t.getIncarcator()) {
                             conditions = false;
                         }
-                        if (tipCauciucuriCheckBox.isSelected() && !t.getTip_roti().equalsIgnoreCase("cauciucuri")) {
+                        if (tipCauciucuriCheckBox.isSelected() && !t.getTip_roti().equalsIgnoreCase("senile")) {
                             conditions = false;
                         }
-                        if (consumCheckBox.isSelected() && t.getConsum_combustibil() > 30.0) {
+                        if (consumCheckBox.isSelected() && t.getConsum_combustibil() >=30.0) {
                             conditions = false;
                         }
                         if (conditions) {
                             textArea.append(t.toString() + "\n");
                         }
+                    }
+                }
+                if(vehiculebutton.isSelected()) {
+                    for(Vehicul v : (dinfisier? vehicule2:vehicule)) {
+                        textArea.append(v.toString() + "\n");
                     }
                 }
             }
@@ -110,9 +117,10 @@ public class Interfata_Radu extends JFrame {
                 textArea.setText("");
             }
         });
-        citestedinfisierButton.addActionListener(new ActionListener() {
+        citestedinfisierButton.addActionListener(new ActionListener() {int i=0;
             @Override
             public void actionPerformed(ActionEvent e) {
+                if(i<1){
                 try{
                     FileInputStream fin = new FileInputStream("C:\\Users\\ionra\\Documents\\faculta\\proiecte_poo_java\\Proiect-POO\\Proiect-POO-Vehicule-GR2\\src\\fisierRadu.txt");
                     BufferedReader br = new BufferedReader(new InputStreamReader(fin));
@@ -125,12 +133,19 @@ public class Interfata_Radu extends JFrame {
                         } else if (linie.startsWith("Tractor: ")) {
                         String[] valori = linie.split(": ")[1].split(", ");
                         tractoare.add(new Tractor(Integer.parseInt(valori[0]), valori[1], Integer.parseInt(valori[2]), valori[3], Integer.parseInt(valori[4]),valori[5],Double.parseDouble(valori[6]),Integer.parseInt(valori[7]),Boolean.parseBoolean(valori[8])));
+                        } else if (linie.startsWith("Vehicul: ")) {
+                            String[] valori = linie.split(": ")[1].split(", ");
+                            vehicule2.add(new Vehicul(Integer.parseInt(valori[0]),valori[1],Integer.parseInt(valori[2]),valori[3]));
                         }
                     }
-                } catch (
+                }
+                catch (
                         IOException f) {
                     System.out.println("[EROARE!] " + f.getMessage());
-                }
+                } i=i+1;}
+                else {ArrayList<Masina> masinute= Masina.getListaMasini();
+                    ArrayList<Tractor> tractoare= Tractor.getListaTractor();
+                    ArrayList<Vehicul> vehicule2= Vehicul.getListaVehicule();}
             }
         });
         savebutton.addActionListener(new ActionListener() {
@@ -153,7 +168,7 @@ public class Interfata_Radu extends JFrame {
 
     public static void main(String[] args) {
         Interfata_Radu interfata = new Interfata_Radu();
-        interfata.setTitle("Interfata");
+        interfata.setTitle("Interfata Vehicule");
 
     }
 }
