@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="GUI_Mirea">
+  <grid id="27dc6" binding="gui" layout-manager="GridLayoutManager" row-count="4" column-count="7" same-size-horizontally="true" same-size-vertically="false" hgap="-1" vgap="-1">
+    <margin top="0" left="0" bottom="0" right="0"/>
+    <constraints>
+      <xy x="20" y="20" width="3246" height="400"/>
+    </constraints>
+    <properties>
+      <preferredSize width="1280" height="721"/>
+    </properties>
+    <border type="none"/>
+    <children>
+      <component id="49434" class="javax.swing.JButton" binding="vehiculeButton" default-binding="true">
+        <constraints>
+          <grid row="0" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Vehicule"/>
+        </properties>
+      </component>
+      <component id="b108" class="javax.swing.JButton" binding="trenuriButton" default-binding="true">
+        <constraints>
+          <grid row="0" column="2" row-span="1" col-span="3" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Trenuri"/>
+        </properties>
+      </component>
+      <component id="9db57" class="javax.swing.JButton" binding="vapoareButton" default-binding="true">
+        <constraints>
+          <grid row="0" column="5" row-span="1" col-span="2" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Vapoare"/>
+        </properties>
+      </component>
+      <component id="9a8db" class="javax.swing.JCheckBox" binding="electricCuVitezăMinimăCheckBox" default-binding="true">
+        <constraints>
+          <grid row="1" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Electric cu viteză minimă de 100 km/h"/>
+        </properties>
+      </component>
+      <component id="aea18" class="javax.swing.JCheckBox" binding="combustibilMarfarCheckBox" default-binding="true">
+        <constraints>
+          <grid row="1" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Combustibil marfar"/>
+        </properties>
+      </component>
+      <component id="1bd9b" class="javax.swing.JCheckBox" binding="nuSuntSpărgătoareDeCheckBox" default-binding="true">
+        <constraints>
+          <grid row="1" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Nu sunt spărgătoare de gheață și au capacitate echipaj &gt;15"/>
+        </properties>
+      </component>
+      <component id="71e79" class="javax.swing.JCheckBox" binding="spărgătoareDeGheațăCapacitateCheckBox" default-binding="true">
+        <constraints>
+          <grid row="1" column="6" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Spărgătoare de gheață, capacitate echipaj &lt; 15 și culoarea portocalie"/>
+        </properties>
+      </component>
+      <component id="19447" class="javax.swing.JCheckBox" binding="IDParCheckBox" default-binding="true">
+        <constraints>
+          <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <actionCommand value="CheckBox"/>
+          <text value="ID Par"/>
+        </properties>
+      </component>
+      <component id="1f311" class="javax.swing.JCheckBox" binding="maiNouDe2019CheckBox" default-binding="true">
+        <constraints>
+          <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Fabricate începand cu 2019"/>
+        </properties>
+      </component>
+      <component id="133b8" class="javax.swing.JButton" binding="readButton" default-binding="true">
+        <constraints>
+          <grid row="3" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Read"/>
+        </properties>
+      </component>
+      <component id="9b1ed" class="javax.swing.JButton" binding="resetButton" default-binding="true">
+        <constraints>
+          <grid row="3" column="5" row-span="1" col-span="2" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Reset"/>
+        </properties>
+      </component>
+      <component id="253a1" class="javax.swing.JButton" binding="saveButton" default-binding="true">
+        <constraints>
+          <grid row="3" column="2" row-span="1" col-span="3" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Save"/>
+        </properties>
+      </component>
+      <component id="8d200" class="javax.swing.JTextArea" binding="textArea">
+        <constraints>
+          <grid row="2" column="0" row-span="1" col-span="7" vsize-policy="6" hsize-policy="6" anchor="0" fill="3" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="50"/>
+          </grid>
+        </constraints>
+        <properties/>
+      </component>
+    </children>
+  </grid>
+</form>

@@ -1,0 +1,32 @@
+Vehicul: 1, Tesla, 2020, Alb
+Vehicul: 2, Ford, 2018, Negru
+Vehicul: 3, Toyota, 2015, Gri
+Vehicul: 4, BMW, 2021, Albastru
+Vehicul: 5, Mercedes, 2019, Argintiu
+Vehicul: 6, Volkswagen, 2016, Roșu
+Vehicul: 7, Audi, 2023, Verde
+Vehicul: 8, Honda, 2022, Galben
+Vehicul: 9, Chevrolet, 2017, Portocaliu
+Vehicul: 10, Nissan, 2014, Mov
+
+Tren: 11, Marfar, true, CFR, 2010, Roșu, 30, București - Constanța, 100
+Tren: 12, Personal, false, SNCF, 2005, Albastru, 20, Cluj - Oradea, 80
+Tren: 13, Rapid, true, DB, 2018, Gri, 50, Timișoara - Arad, 120
+Tren: 14, Intercity, true, Renfe, 2019, Negru, 40, Sibiu - Brașov, 140
+Tren: 15, Marfar, false, ČD, 2000, Alb, 35, Iași - Suceava, 70
+Tren: 16, Personal, true, VR, 2013, Galben, 25, Buzău - Brăila, 90
+Tren: 17, Rapid, false, OBB, 2009, Portocaliu, 45, Galați - Tulcea, 110
+Tren: 18, Intercity, true, PKP, 2021, Mov, 60, Târgu Mureș - Alba Iulia, 160
+Tren: 19, Marfar, false, CP, 2015, Verde, 50, Satu Mare - Baia Mare, 75
+Tren: 20, Personal, true, JR, 2012, Maro, 20, Pitești - Craiova, 95
+
+Vapor: 21, Cargo, true, Maersk, 2015, Roșu, 5000.0, 30, Rotterdam - Constanța
+Vapor: 22, Pasageri, false, MSC, 2018, Alb, 8000.0, 50, Barcelona - Genova
+Vapor: 23, Cargo, false, Hapag, 2020, Albastru, 4500.0, 25, Hamburg - Londra
+Vapor: 24, Pasageri, true, Carnival, 2017, Negru, 10000.0, 60, Miami - Bahamas
+Vapor: 25, Cargo, false, CMA CGM, 2013, Gri, 4000.0, 20, Shanghai - Los Angeles
+Vapor: 26, Pasageri, true, Norwegian, 2019, Verde, 12000.0, 70, Atena - Istanbul
+Vapor: 27, Cargo, false, COSCO, 2014, Galben, 3000.0, 15, Hong Kong - Singapore
+Vapor: 28, Pasageri, true, Princess, 2021, Mov, 11000.0, 65, Sydney - Auckland
+Vapor: 29, Cargo, false, ZIM, 2012, Maro, 3500.0, 18, Mombasa - Durban
+Vapor: 30, Pasageri, true, Royal Caribbean, 2016, Portocaliu, 15000.0, 10, New York - Bermuda
