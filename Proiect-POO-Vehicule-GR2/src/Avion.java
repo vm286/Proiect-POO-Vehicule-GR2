@@ -83,9 +83,9 @@ avioane.add(Lockheed);
     }
     else{
         if(mil) {
-            return this.getId()+". Avion de marca " + super.getMarca() + ", de model " + Model + ", care poate transporta " + this.pssnr + " de oameni, " + this.cargolim + " de tone de marfa cu motor tip " + this.tipMotor+" cu culoare: "+getCuloare()+ " cu raza: "+maxrange+" fabricat in anul: "+getAnFabricatie()+" cu scop militar\n";
+            return this.getId()+". Avion de marca " + super.getMarca() + ", de model " + Model + ", care poate transporta " + this.pssnr + " de oameni, " + this.cargolim + " de tone de marfa cu motor tip " + this.tipMotor+" cu culoare: "+getCuloare()+ " cu raza: "+maxrange+"km fabricat in anul: "+getAnFabricatie()+" cu scop militar\n";
         }
-        else{ return this.getId()+". Avion de marca " + super.getMarca() + ", de model " + Model + ", care poate transporta " + this.pssnr + " de oameni, " + this.cargolim + " de tone de marfa cu motor tip " + this.tipMotor+" cu culoare: "+getCuloare()+" cu raza: "+maxrange+" fabricat in anul: "+getAnFabricatie()+" cu scop civil\n";
+        else{ return this.getId()+". Avion de marca " + super.getMarca() + ", de model " + Model + ", care poate transporta " + this.pssnr + " de oameni, " + this.cargolim + " de tone de marfa cu motor tip " + this.tipMotor+" cu culoare: "+getCuloare()+" cu raza: "+maxrange+"km fabricat in anul: "+getAnFabricatie()+" cu scop civil\n";
         }
         }
 
