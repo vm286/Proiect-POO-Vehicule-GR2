@@ -1,4 +1,4 @@
-public class Vehicul {
+public class Vehicul implements StareVehicul {
     private int id;
     private String marca;
     private int anFabricatie;
@@ -28,25 +28,49 @@ public class Vehicul {
         this.culoare = other.culoare;
     }
 
+    // Getteri și setteri (opțional)
+    public int getId(){
+        return id;
+    }
+    public void setId(int id){
+        this.id = id;
+    }
+
+    public String getMarca(){
+        return "marca " + marca;
+    }
+    public void setMarca(String marca){
+        this.marca = marca;
+    }
+
+    public int getAnFabricatie(){
+        return anFabricatie;
+    }
+    public void setAnFabricatie(int anFabricatie){
+        this.anFabricatie = anFabricatie;
+    }
+
+    public String getCuloare(){
+        return culoare;
+    }
+    public void setCuloare(String culoare){
+        this.culoare = culoare;
+    }
+
     // Metoda toString
     @Override
     public String toString() {
-        return "Vehicul [ID: " + id + ", Marca: " + marca + ", An: " + anFabricatie + ", Culoare: " + culoare + "]";
+        return "Vehicul ID: " + id + ", Marca: " + marca + ", An: " + anFabricatie + ", Culoare: " + culoare;
     }
 
-    // Getteri și setteri (opțional)
-    int getId(){
-        return id;
+    @Override
+    public void functional() {
+        System.out.println("Funcțional");
     }
-    String getMarca(){
-        return marca;
+
+    @Override
+    public void nefunctional() {
+        System.out.println("Nefuncțional");
     }
-    int getAnFabricatie(){
-        return anFabricatie;
-    }
-    String getCuloare(){
-        return culoare;
-    }
-    //sdhfkjsdfsd
 }
 
